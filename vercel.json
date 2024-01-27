@@ -2,9 +2,5 @@
   "version": 2,
   "name": "status-backend",
   "builds": [{ "src": "server.js", "use": "@vercel/node" }],
-  "routes": [
-    { "src": "/", "dest": "/" },
-    { "src": "/test", "dest": "/" },
-    { "src": "/enroll", "dest": "/" }
-  ]
+  "routes": [{ "src": "/(.*)", "dest": "/server.js" }]
 }
