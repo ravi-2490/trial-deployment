@@ -39,3 +39,5 @@ connectToDb((error) => {
     });
   }
 });
+
+module.exports = app;
